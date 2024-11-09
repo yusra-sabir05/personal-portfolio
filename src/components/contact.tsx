@@ -53,6 +53,7 @@ export default function Contact() {
         });
       }
     } catch (error) {
+      console.error("Error sending email:", error); // Log the error
       toast.error("An error occurred. Please try again.", { id: toastId });
     }
   };
